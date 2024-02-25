@@ -21,7 +21,7 @@ Boot the application:
 
 Open the REST api in a browser:
 
-`http://localhost:8080/hello?mode=bean`
+http://localhost:8080/hello?mode=bean
 
 Copy the PID from the Spring boot logs, and check the memory consumption:
 
@@ -38,7 +38,7 @@ Run the native executable really fast:
 
 Open the REST api in a browser:
 
-`http://localhost:8080/hello?mode=bean`
+http://localhost:8080/hello?mode=bean
 
 Check the memory consumption again with the new PID:
 
