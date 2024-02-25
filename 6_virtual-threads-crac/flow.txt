@@ -1,0 +1,50 @@
+Make sure in application.properties the setting is:
+
+spring.threads.virtual.enabled=false
+
+run:
+
+SPRING_BOOT_RUN_JVM_ARGUMENTS="-XX:ActiveProcessorCount=12 -Xmx4096m" mvn spring-boot:run
+
+In second terminal, run Apache Bench:
+
+ab -n 5000 -c 10 http://localhost:8080/vets.html
+
+Run it again.
+
+Stop app, change setting to:
+
+spring.threads.virtual.enabled=true
+
+SPRING_BOOT_RUN_JVM_ARGUMENTS="-XX:ActiveProcessorCount=12 -Xmx4096m" mvn spring-boot:run
+
+Run again:
+
+ab -n 5000 -c 10 http://localhost:8080/vets.html
+
+If it shows it stuck on second run, explain that it's not magic - there is a lot more GC going on here.
+
+Project CRAC (show slides first):
+
+mvn spring-boot:run
+
+Show time it takes to load
+
+Show checkpoint.sh
+
+./checkpoint.sh
+
+Explain the "warm up time"
+
+Hit enter
+
+docker images | grep crac
+
+Show restore.sh
+
+./restore.sh
+
+Only "penalty" is memory. And need to make sure that I/O is closed when creating checkpoint.
+
+
+
