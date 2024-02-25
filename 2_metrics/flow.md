@@ -24,3 +24,5 @@ http://localhost:9090/
 Search for:
 `orders_placed_total`
 
+Clean up by stopping the application and running:
+`docker compose down`
