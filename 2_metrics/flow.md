@@ -10,8 +10,11 @@ Boot the application:
 Shoe the following URLs:
 
 http://localhost:8080
+
 http://localhost:8080/actuator/metrics
+
 http://localhost:8080/actuator/metrics/orders.flagged
+
 http://localhost:8080/actuator/prometheus
 
 View the prometheus UI:
