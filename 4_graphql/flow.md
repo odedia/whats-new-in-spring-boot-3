@@ -1,17 +1,26 @@
-code .
+Open the project in VScode
+
+`code .`
+
+Review the following files:
+```
 ./src/main/java/com/example/QuoteController.java
 application.yaml
 schema.graphqls
+```
 
-mvn spring-boot:run
+Boot the application:
+`mvn spring-boot:run`
+
+Open the application:
 
 http://localhost:8080
-It's the same app
 
-But:
+Show the GraphQL representation of the app:
+
 http://localhost:8080/graphiql
 
-Shows the GraphQL interface
+Run some queries:
 
 query {  
   allAuthors {
@@ -48,6 +57,3 @@ query {
         field
     }
 }
-
-
-
