@@ -1,0 +1,11 @@
+com/example/model/jpa/QuoteRepository.class
+com/example/QuoteController.class
+com/example/QuoteRestController.class
+com/example/GraphQLDemoApplication.class
+com/example/model/Author.class
+com/example/model/jpa/QuoteEntity.class
+com/example/model/jpa/AuthorRepository.class
+com/example/model/jpa/AuthorEntity.class
+com/example/model/Field.class
+com/example/model/Quote.class
+com/example/model/QuotesService.class

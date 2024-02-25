@@ -1,0 +1,21 @@
+docker compose up -d
+http://127.0.0.1:9411/zipkin/
+
+mvn clean package -DskipTests
+
+java -jar message-service/target/message-service-0.0.1-SNAPSHOT.jar & java -jar billboard-client/target/billboard-client-0.0.1-SNAPSHOT.jar&
+
+http://localhost:8080
+
+Show dependencies in zipkin
+Show that random-quote#connection shows an author
+Show the tags
+
+subl ./message-service/src/main/java/com/example/TracingMessageServiceApplication.java
+subl ./message-service/src/main/java/com/example/MessageService.java
+
+fg, Ctrl+C
+fg, Ctrl+C
+
+docker compose down
+

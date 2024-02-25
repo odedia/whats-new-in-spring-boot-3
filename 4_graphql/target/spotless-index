@@ -1,0 +1,13 @@
+2932mF0EjnMbTAp9Sav/BDl6Z4MZvDhGj3AMj5GLK0U=
+src/main/java/com/example/GraphQLDemoApplication.java 2024-02-21T06:13:18.245950633Z
+src/main/java/com/example/QuoteController.java 2024-02-21T07:34:22.611200738Z
+src/main/java/com/example/QuoteRestController.java 2024-02-21T06:13:18.246144718Z
+src/main/java/com/example/model/Author.java 2024-02-21T06:13:18.246306094Z
+src/main/java/com/example/model/Field.java 2024-02-21T06:13:18.246396512Z
+src/main/java/com/example/model/Quote.java 2024-02-21T06:13:18.246509679Z
+src/main/java/com/example/model/QuotesService.java 2024-02-21T06:13:18.246611221Z
+src/main/java/com/example/model/jpa/AuthorEntity.java 2024-02-21T06:13:18.246765639Z
+src/main/java/com/example/model/jpa/AuthorRepository.java 2024-02-21T06:13:18.246857307Z
+src/main/java/com/example/model/jpa/QuoteEntity.java 2024-02-21T06:13:18.246941724Z
+src/main/java/com/example/model/jpa/QuoteRepository.java 2024-02-21T06:13:18.247033558Z
+src/test/java/com/example/GraphQLDemoApplicationTests.java 2024-02-21T06:13:18.248435528Z

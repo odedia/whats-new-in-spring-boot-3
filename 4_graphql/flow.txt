@@ -1,0 +1,53 @@
+code .
+./src/main/java/com/example/QuoteController.java
+application.yaml
+schema.graphqls
+
+mvn spring-boot:run
+
+http://localhost:8080
+It's the same app
+
+But:
+http://localhost:8080/graphiql
+
+Shows the GraphQL interface
+
+query {  
+  allAuthors {
+      name
+      wikipediaUrl
+      field
+  }
+}
+
+{
+  randomQuote {
+    id,
+    quote,
+    author {
+      name
+      wikipediaUrl
+      field
+    }
+  }
+}
+
+mutation {
+    addAuthor(id:6, name:"Aristotle", field:POLITICS,wikipediaUrl:"https://en.wikipedia.org/wiki/Aristotle") {
+        name
+        wikipediaUrl
+        field
+    }
+}
+
+query {
+    allAuthors {
+        name
+        wikipediaUrl
+        field
+    }
+}
+
+
+

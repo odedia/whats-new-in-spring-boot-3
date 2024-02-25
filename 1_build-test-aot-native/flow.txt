@@ -1,0 +1,21 @@
+gradle tasks --all | grep Aot
+
+rm -rf build
+gradle clean build --> also runs processAot
+
+subl ./build/generated/aotResources/META-INF/native-image/com.example/build-test-aot-native
+subl ./src/main/java/com/example/aot/BuildTestAotNativeRuntimeHints.java
+
+gradle bootRun
+http://localhost:8080/hello?mode=bean
+
+ps -o rss= -p <PID> | awk '{print $1 / 1024}'
+
+gradle clean nativeCompile
+ 
+https://github.com/oracle/graal/issues/5327
+
+./build/native/nativeCompile/build-test-aot-native
+http://localhost:8080/hello?mode=bean
+
+ps -o rss= -p <PID> | awk '{print $1 / 1024}'
