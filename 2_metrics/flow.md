@@ -18,6 +18,7 @@ http://localhost:8080/actuator/metrics/orders.flagged
 http://localhost:8080/actuator/prometheus
 
 View the prometheus UI:
+
 http://localhost:9090/
 
 Search for:
