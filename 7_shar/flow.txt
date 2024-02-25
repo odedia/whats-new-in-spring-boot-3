@@ -1,0 +1,3 @@
+open:
+https://tanzu.vmware.com/spring-health-assessment
+
